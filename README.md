@@ -1,4 +1,4 @@
-# Deceptive Domain Checker
+# Deceptive Domains Checker
 
 An automated system that monitors tracking domains for deceptive warning screens on Chrome and Safari/WebKit browsers, with Telegram notifications.
 
