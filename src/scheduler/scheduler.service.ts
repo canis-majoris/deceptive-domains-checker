@@ -1,6 +1,6 @@
 import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { Cron, CronExpression } from '@nestjs/schedule';
+import { Cron } from '@nestjs/schedule';
 import { KeitaroService } from '../keitaro/keitaro.service';
 import { CheckerService } from '../checker/checker.service';
 import { TelegramService } from '../telegram/telegram.service';
@@ -63,8 +63,6 @@ export class SchedulerService implements OnModuleInit {
     name: 'domain-check',
   })
   async scheduledDomainCheck() {
-    const intervalMinutes = this.configService.get<number>('CHECK_INTERVAL_MINUTES', 30);
-
     // Dynamic cron would require custom implementation
     // For now, the cron is set to 30 minutes, but can be configured via environment
 
