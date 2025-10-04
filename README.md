@@ -4,7 +4,7 @@ An automated system that monitors tracking domains for deceptive warning screens
 
 ## 🎯 Overview
 
-This system continuously monitors your tracking domains by:
+This system continuously monitors tracking domains by:
 
 - Fetching active domains from Keitaro API
 - Checking for deceptive/phishing warnings on both Chrome and Safari/WebKit
